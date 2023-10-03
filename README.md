@@ -4,9 +4,6 @@ Personal iOS/Android/Web dev blog
 <html>
 <body>
   <div>
-    <img alt="https://youtu.be/eTa9EN42a7o" class="transform-center" style="" src="https://img.youtube.com/vi/eTa9EN42a7o/maxresdefault.jpg">
-  </div>
-  <div>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/eTa9EN42a7o?si=rbW4vsqZ7g8YegVq&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
 
