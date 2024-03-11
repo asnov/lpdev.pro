@@ -1,22 +1,60 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "com.example.applinksexample",
-    "sha256_cert_fingerprints": [
-      "78:1D:77:99:06:92:F0:D9:14:5A:80:41:43:E1:21:D5:78:4F:6E:24:22:3C:96:18:6B:3D:7D:35:D7:7B:C0:F2"
-    ]
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.example.applinksexample",
+      "sha256_cert_fingerprints": [
+        "78:1D:77:99:06:92:F0:D9:14:5A:80:41:43:E1:21:D5:78:4F:6E:24:22:3C:96:18:6B:3D:7D:35:D7:7B:C0:F2"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.saverlife.app",
+      "sha256_cert_fingerprints": [
+        "78:1D:77:99:06:92:F0:D9:14:5A:80:41:43:E1:21:D5:78:4F:6E:24:22:3C:96:18:6B:3D:7D:35:D7:7B:C0:F2",
+        "C7:2A:0B:E9:84:D5:86:C5:84:9E:BC:BF:05:8C:6F:73:A0:BB:E1:6D:B1:E2:CF:E0:9E:30:76:39:93:EB:DA:D1",
+        "AF:7B:0D:DC:1F:58:71:DC:07:E0:F9:F8:DA:27:EB:18:36:DB:3E:23:69:C1:96:6C:CF:7B:58:59:8B:B5:09:E5"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.saverlife.saverlifeandroid",
+      "sha256_cert_fingerprints": [
+        "78:1D:77:99:06:92:F0:D9:14:5A:80:41:43:E1:21:D5:78:4F:6E:24:22:3C:96:18:6B:3D:7D:35:D7:7B:C0:F2",
+        "C7:2A:0B:E9:84:D5:86:C5:84:9E:BC:BF:05:8C:6F:73:A0:BB:E1:6D:B1:E2:CF:E0:9E:30:76:39:93:EB:DA:D1",
+        "AF:7B:0D:DC:1F:58:71:DC:07:E0:F9:F8:DA:27:EB:18:36:DB:3E:23:69:C1:96:6C:CF:7B:58:59:8B:B5:09:E5"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.saverlife.app.staging",
+      "sha256_cert_fingerprints": [
+        "78:1D:77:99:06:92:F0:D9:14:5A:80:41:43:E1:21:D5:78:4F:6E:24:22:3C:96:18:6B:3D:7D:35:D7:7B:C0:F2",
+        "C7:2A:0B:E9:84:D5:86:C5:84:9E:BC:BF:05:8C:6F:73:A0:BB:E1:6D:B1:E2:CF:E0:9E:30:76:39:93:EB:DA:D1",
+        "AF:7B:0D:DC:1F:58:71:DC:07:E0:F9:F8:DA:27:EB:18:36:DB:3E:23:69:C1:96:6C:CF:7B:58:59:8B:B5:09:E5"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.saverlife.app.dev",
+      "sha256_cert_fingerprints": [
+        "78:1D:77:99:06:92:F0:D9:14:5A:80:41:43:E1:21:D5:78:4F:6E:24:22:3C:96:18:6B:3D:7D:35:D7:7B:C0:F2",
+        "C7:2A:0B:E9:84:D5:86:C5:84:9E:BC:BF:05:8C:6F:73:A0:BB:E1:6D:B1:E2:CF:E0:9E:30:76:39:93:EB:DA:D1",
+        "AF:7B:0D:DC:1F:58:71:DC:07:E0:F9:F8:DA:27:EB:18:36:DB:3E:23:69:C1:96:6C:CF:7B:58:59:8B:B5:09:E5"
+      ]
+    }
   }
-},
-{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "com.saverlife.saverlifeandroid",
-    "sha256_cert_fingerprints": [
-      "78:1D:77:99:06:92:F0:D9:14:5A:80:41:43:E1:21:D5:78:4F:6E:24:22:3C:96:18:6B:3D:7D:35:D7:7B:C0:F2",
-      "C7:2A:0B:E9:84:D5:86:C5:84:9E:BC:BF:05:8C:6F:73:A0:BB:E1:6D:B1:E2:CF:E0:9E:30:76:39:93:EB:DA:D1",
-      "AF:7B:0D:DC:1F:58:71:DC:07:E0:F9:F8:DA:27:EB:18:36:DB:3E:23:69:C1:96:6C:CF:7B:58:59:8B:B5:09:E5"
-    ]
-  }
-}]
+]
