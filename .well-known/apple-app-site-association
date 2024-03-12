@@ -2,7 +2,8 @@
   "applinks": {
     "details": [
       {
-        "appIDs": [ "ABCDE12345.pro.lpdev.AssociatedDomainsExample",
+        "appIDs": [
+          "ABCDE12345.pro.lpdev.AssociatedDomainsExample",
           "ABCDE12345.com.saverlifetest.app",
           "ABCDE12345.com.saverlife.app.staging",
           "ABCDE12345.com.saverlife.app.dev",
@@ -36,11 +37,27 @@
   },
 
   "webcredentials": {
-    "apps": [ "ABCDE12345.com.example.app" ]
+    "apps": [
+          "ABCDE12345.pro.lpdev.AssociatedDomainsExample",
+          "ABCDE12345.com.saverlifetest.app",
+          "ABCDE12345.com.saverlife.app.staging",
+          "ABCDE12345.com.saverlife.app.dev",
+          "ABCDE12345.pro.lpdev.com.saverlifetest.app",
+          "ABCDE12345.pro.lpdev.com.saverlife.app.staging",
+          "ABCDE12345.pro.lpdev.com.saverlife.app.dev"
+    ]
   },
 
 
   "appclips": {
-    "apps": ["ABCED12345.com.example.MyApp.Clip"]
+    "apps": [
+          "ABCDE12345.pro.lpdev.AssociatedDomainsExample",
+          "ABCDE12345.com.saverlifetest.app",
+          "ABCDE12345.com.saverlife.app.staging",
+          "ABCDE12345.com.saverlife.app.dev",
+          "ABCDE12345.pro.lpdev.com.saverlifetest.app",
+          "ABCDE12345.pro.lpdev.com.saverlife.app.staging",
+          "ABCDE12345.pro.lpdev.com.saverlife.app.dev"
+    ]
   }
 }
