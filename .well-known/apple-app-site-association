@@ -3,13 +3,13 @@
     "details": [
       {
         "appIDs": [
-          "ABCDE12345.pro.lpdev.AssociatedDomainsExample",
-          "ABCDE12345.com.saverlifetest.app",
-          "ABCDE12345.com.saverlife.app.staging",
-          "ABCDE12345.com.saverlife.app.dev",
-          "ABCDE12345.pro.lpdev.com.saverlifetest.app",
-          "ABCDE12345.pro.lpdev.com.saverlife.app.staging",
-          "ABCDE12345.pro.lpdev.com.saverlife.app.dev"
+          "3Y75H9799M.pro.lpdev.AssociatedDomainsExample",
+          "3Y75H9799M.com.saverlifetest.app",
+          "3Y75H9799M.com.saverlife.app.staging",
+          "3Y75H9799M.com.saverlife.app.dev",
+          "3Y75H9799M.pro.lpdev.com.saverlifetest.app",
+          "3Y75H9799M.pro.lpdev.com.saverlife.app.staging",
+          "3Y75H9799M.pro.lpdev.com.saverlife.app.dev"
         ],
         "components": [
           {
@@ -38,26 +38,26 @@
 
   "webcredentials": {
     "apps": [
-          "ABCDE12345.pro.lpdev.AssociatedDomainsExample",
-          "ABCDE12345.com.saverlifetest.app",
-          "ABCDE12345.com.saverlife.app.staging",
-          "ABCDE12345.com.saverlife.app.dev",
-          "ABCDE12345.pro.lpdev.com.saverlifetest.app",
-          "ABCDE12345.pro.lpdev.com.saverlife.app.staging",
-          "ABCDE12345.pro.lpdev.com.saverlife.app.dev"
+          "3Y75H9799M.pro.lpdev.AssociatedDomainsExample",
+          "3Y75H9799M.com.saverlifetest.app",
+          "3Y75H9799M.com.saverlife.app.staging",
+          "3Y75H9799M.com.saverlife.app.dev",
+          "3Y75H9799M.pro.lpdev.com.saverlifetest.app",
+          "3Y75H9799M.pro.lpdev.com.saverlife.app.staging",
+          "3Y75H9799M.pro.lpdev.com.saverlife.app.dev"
     ]
   },
 
 
   "appclips": {
     "apps": [
-          "ABCDE12345.pro.lpdev.AssociatedDomainsExample",
-          "ABCDE12345.com.saverlifetest.app",
-          "ABCDE12345.com.saverlife.app.staging",
-          "ABCDE12345.com.saverlife.app.dev",
-          "ABCDE12345.pro.lpdev.com.saverlifetest.app",
-          "ABCDE12345.pro.lpdev.com.saverlife.app.staging",
-          "ABCDE12345.pro.lpdev.com.saverlife.app.dev"
+          "3Y75H9799M.pro.lpdev.AssociatedDomainsExample",
+          "3Y75H9799M.com.saverlifetest.app",
+          "3Y75H9799M.com.saverlife.app.staging",
+          "3Y75H9799M.com.saverlife.app.dev",
+          "3Y75H9799M.pro.lpdev.com.saverlifetest.app",
+          "3Y75H9799M.pro.lpdev.com.saverlife.app.staging",
+          "3Y75H9799M.pro.lpdev.com.saverlife.app.dev"
     ]
   }
 }
