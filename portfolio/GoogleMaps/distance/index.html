@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Maps - Lat/Lng to Pixels & Distance</title>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAM6qYfac5503BzUmiAaE1mRM4LMRS19Y0"></script>
+  <style>
+    #map {
+      height: 500px;
+      width: 100%;
+    }
+
+    #info {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="map"></div>
+  <div id="info">Move your mouse over the map to see the distance.</div>
+
+  <script>
+    let map;
+    let circle;
+    let circleCenter = { lat: -34.690233, lng: -58.839843 }; // Example: my parents area
+    function updateDis(event) {
+      let cursorLatLng = event.latLng;
+      let distance = google.maps.geometry.spherical.computeDistanceBetween(
+        new google.maps.LatLng(circleCenter.lat, circleCenter.lng),
+        cursorLatLng
+      );
+      document.getElementById("info").innerText =
+        `Distance from center: ${distance.toFixed(2)} meters`;
+    }
+
+    function initMap() {
+      map = new google.maps.Map(document.getElementById("map"), {
+        center: circleCenter,
+        zoom: 15
+      });
+
+      circle = new google.maps.Circle({
+        strokeColor: "#FF0000",
+        strokeOpacity: 0.8,
+        strokeWeight: 2,
+        fillColor: "#FF000000",
+        fillOpacity: 0,
+        map,
+        center: circleCenter,
+        radius: 100, // 100 meters
+      });
+      circle.addListener('mousemove', updateDis);
+      map.addListener("mousemove", updateDis);
+    }
+  </script>
+
+  <script>
+    window.onload = initMap;
+  </script>
+
+</body>
+
+</html>
