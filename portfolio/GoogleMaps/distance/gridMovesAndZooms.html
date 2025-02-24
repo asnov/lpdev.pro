@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Maps - Lat/Lng to Pixels & Distance</title>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAM6qYfac5503BzUmiAaE1mRM4LMRS19Y0"></script>
+  <style>
+    #map {
+      height: 500px;
+      width: 100%;
+    }
+
+    #info {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="map"></div>
+  <div id="info">Move your mouse over the map to see the distance.</div>
+
+  <script>
+    let map;
+    let circle;
+    let circleCenter = { lat: -34.690233, lng: -58.839843 }; // Example: my parents area
+    let circleRadius = 100;
+    let gridLines = [];
+
+    function updateDis(event) {
+      let cursorLatLng = event.latLng;
+      let distance = google.maps.geometry.spherical.computeDistanceBetween(
+        new google.maps.LatLng(circleCenter.lat, circleCenter.lng),
+        cursorLatLng
+      );
+      document.getElementById("info").innerText =
+        `Distance from center: ${distance.toFixed(2)} meters`;
+    }
+    function initMap() {
+      map = new google.maps.Map(document.getElementById("map"), {
+        center: circleCenter,
+        zoom: 15
+      });
+
+      circle = new google.maps.Circle({
+        strokeColor: "#FF0000",
+        strokeOpacity: 0.8,
+        strokeWeight: 2,
+        fillColor: "#FF000000",
+        fillOpacity: 0,
+        map,
+        center: circleCenter,
+        radius: circleRadius,
+      });
+      circle.addListener('mousemove', updateDis);
+      map.addListener("mousemove", updateDis);
+      drawGrid();
+
+      map.addListener("zoom_changed", drawGrid);
+      map.addListener("dragend", drawGrid);
+    }
+
+    function drawGrid() {
+      gridLines.forEach(line => line.setMap(null));
+      gridLines = [];
+
+      let bounds = map.getBounds();
+      if (!bounds) return;
+
+      let ne = bounds.getNorthEast();
+      let sw = bounds.getSouthWest();
+
+      let startLat = sw.lat();
+      let endLat = ne.lat();
+      let startLng = sw.lng();
+      let endLng = ne.lng();
+
+      let latStep = metersToLat(10);
+      let lngStep = metersToLng(10, circleCenter.lat);
+
+      for (let lng = startLng; lng < endLng; lng += lngStep) {
+        let line = new google.maps.Polyline({
+          path: [{ lat: startLat, lng: lng }, { lat: endLat, lng: lng }],
+          strokeColor: "#00FF00",
+          strokeOpacity: 0.5,
+          strokeWeight: 1,
+          map: map
+        });
+        gridLines.push(line);
+      }
+
+      for (let lat = startLat; lat < endLat; lat += latStep) {
+        let line = new google.maps.Polyline({
+          path: [{ lat: lat, lng: startLng }, { lat: lat, lng: endLng }],
+          strokeColor: "#00FF00",
+          strokeOpacity: 0.5,
+          strokeWeight: 1,
+          map: map
+        });
+        gridLines.push(line);
+      }
+    }
+
+    function metersToLat(meters) {
+      return meters / 111320;
+    }
+
+    function metersToLng(meters, lat) {
+      return meters / (111320 * Math.cos(lat * (Math.PI / 180)));
+    }
+
+    window.onload = initMap;
+  </script>
+
+</body>
+
+</html>
