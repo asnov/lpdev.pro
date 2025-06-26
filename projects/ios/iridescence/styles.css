@@ -1,0 +1,25 @@
+/* Iridescence demo styles */
+
+div[id^="app"] {
+    margin-bottom: 2rem;
+    padding: 1rem 0 1rem 2rem;
+}
+
+div[id^="app"]:last-of-type {
+    margin-bottom: 0;
+}
+
+div[id^="app"] img {
+    vertical-align: top;
+    padding-top: 5rem;
+    margin-right: 2rem;
+}
+
+.app-number {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    vertical-align: top;
+    padding-top: 5rem;
+    margin-right: 1rem;
+}
