@@ -1,6 +1,9 @@
 # lpdev.pro
 Personal iOS/Android/Web dev blog
 
+> 🎂 **October 22 — today is my birthday!** If you'd like to congratulate me, you can treat me to a cup of tea here:
+> **[tecito.boxeotv.com.ar](https://tecito.boxeotv.com.ar)** ☕ — Alex
+
 <html lang="en">
 <body>
   <div>
